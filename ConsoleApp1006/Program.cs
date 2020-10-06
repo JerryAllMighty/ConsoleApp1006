@@ -13,7 +13,7 @@ namespace ConsolePhoneBook
         {
             PhoneBookManager manager = PhoneBookManager.CreateManagerInstance();
 
-            manager.ReadToFile();
+            //manager.ReadToFile();
 
             while (true)
             {
@@ -43,7 +43,7 @@ namespace ConsolePhoneBook
                         case 3: manager.SearchData(); break;
                         case 4: manager.SortData(); break;
                         case 5: manager.DeleteData(); break;
-                        case 6: manager.WriteToFile().WriteLine("프로그램을 종료합니다"); return;
+                        //case 6: manager.WriteToFile().WriteLine("프로그램을 종료합니다"); return;
                     }
                 }
                 catch (MenuChoiceException err)
